@@ -13,4 +13,6 @@ export class EmployeeListComponent {
   constructor(private _httpClient: HttpClient) {
   }
   data$: Observable<EmployeeModel[] | null> = this._httpClient.get<EmployeeModel[]>('assets/data/employees.json');
+  // paragraph: string = 'Tekst który pojawi się w HTML';
+  // data = [{name: 'Jacek'}, {name: 'Wojtek'}];
 }
