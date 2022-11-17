@@ -13,4 +13,7 @@ export class EmployeeFormComponent {
     age: new FormControl(null, [Validators.min(0)]),
     salary: new FormControl(null, [Validators.required, Validators.min(0)])
   });
+  onButtonClicked (form: { name: string, age: number, salary: number }) {
+    alert('New employee ' + form.name + ' , ' + form.age + ' years old was successfully added to the database. Salary: ' + form.salary + ' USD.');
+  }
 }
