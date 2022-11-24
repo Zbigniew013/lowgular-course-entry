@@ -1,8 +1,0 @@
-<h1>My first app</h1>
-<h2>Employee list</h2>
-<ul *ngIf="data$ | async as data; else empty">
-  <li *ngFor="let employee of data">{{ employee.personalNumber }}: {{ employee.name }}
-    <button (click)="remove(employee.personalNumber)" >Remove me</button>
-  </li>
-</ul>
-<ng-template #empty> There is no data </ng-template>

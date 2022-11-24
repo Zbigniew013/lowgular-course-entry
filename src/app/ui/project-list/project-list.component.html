@@ -1,8 +1,0 @@
-<h2>Projects list:</h2>
-
-<ul *ngIf="data$ | async as data; else empty">
-  <li *ngFor="let project of data" style="list-style: none" >
-    {{ project.id }}. {{ project.name }} ... {{ project.owner}} ... {{project.description}}
-  </li>
-</ul>
-<ng-template #empty> There is no data </ng-template>
